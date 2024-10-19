@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Profile</title>
+    <link rel="stylesheet" href="css/alumni-profile.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="background-wrapper">
+        <!-- Alumni Profile Card -->
+        <div class="profile-tab">
+            <!-- Alumni Name -->
+            <h1 id="alumni-name">Alumni Name</h1>
+
+            <!-- Contact Information -->
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <span id="alumni-email"></span></p>
+            <p><strong>Phone:</strong> <span id="alumni-phone"></span></p>
+
+            <!-- Business Logo -->
+            <img id="alumni-business-logo" alt="Business Logo" />
+
+            <!-- Business Information -->
+            <div class="business-info">
+                <h2>Business Information</h2>
+                <p><strong>Business Name:</strong> <span id="alumni-business"></span></p>
+                <p><strong>Location:</strong> <span id="alumni-city"></span></p>
+                <p><strong>Category:</strong> <span id="alumni-category"></span></p>
+                <p><strong>Description:</strong> <span id="alumni-description"></span></p>
+                <p><strong>Website:</strong> <a id="alumni-website" href="#" target="_blank">Visit Website</a></p>
+            </div>
+
+            <!-- Discount Section (Visible only if discount exists) -->
+            <div id="alumni-discount" class="discount-banner" style="display:none;">
+                Alumni Discount: <span id="alumni-discount-description"></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 University of Louisiana Monroe Alumni Directory</p>
+    </footer>
+
+    <script src="js/alumni-profile.js"></script>
+</body>
+</html>

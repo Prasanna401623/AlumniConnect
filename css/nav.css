@@ -1,0 +1,42 @@
+/* Ensure the navigation bar stays on top and is opaque */
+nav {
+  background-color: #822432; /* Maroon background */
+  padding: 10px;
+  margin-bottom: 20px; /* Adds space between the nav and content */
+  position: relative; 
+  z-index: 1000; 
+  opacity: 1; /* Ensure no transparency */
+}
+
+
+nav ul {
+
+  background-color: #822432; /* Maroon background */
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative; 
+  z-index: 1000;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #ffffff; /* Ensure the text color is white for good contrast */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #a63d51; /* Slight hover effect with a darker shade */
+  border-radius: 5px;
+}

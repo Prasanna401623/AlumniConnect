@@ -1,0 +1,193 @@
+/* General reset and styling */
+body, h1, ul {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f4ea;
+  color: #333;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navigation cleanup */
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; /* Reduce padding */
+  background-color: #822432;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px; /* Small space between nav items */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Ensure the content starts immediately after the nav */
+.background-wrapper {
+  padding: 30px 15px; /* Adjust padding to reduce size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Full height background, but not excessive */
+  background: #f7f4ea; /* Simplified background */
+}
+
+/* Centered ULM logo without extra design */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ulm-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #822432;
+  margin-bottom: 30px;
+}
+
+/* Search bar styling with maroon icon */
+.form-group {
+  text-align: center;
+  margin-bottom: 20px; /* Reduced margin below the search bar */
+  position: relative;
+}
+
+#search {
+  padding: 15px 20px 15px 45px; /* Adjust padding for the icon */
+  width: 70%;
+  max-width: 500px;
+  font-size: 18px;
+  border-radius: 25px;
+  border: 2px solid #822432;
+  background-color: #f7f4ea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#search::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+#search:focus {
+  border-color: #a63d51;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search icon in maroon color */
+.form-group::before {
+  content: '\1F50D'; /* Magnifying glass icon */
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #822432; /* Maroon color */
+}
+
+/* Alumni list container */
+#alumni-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+  list-style: none;
+  padding: 0;
+}
+
+/* Alumni tab design */
+.alumni-tab {
+  background-color: #822432;
+  background: linear-gradient(145deg, #822432, #a63d51); /* Maroon gradient */
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.alumni-tab img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+}
+
+.alumni-info h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.alumni-info p {
+  color: #f0e1e1;
+  font-size: 14px;
+}
+
+.alumni-tab:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #a63d51, #822432); /* Reverse gradient */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.alumni-tab::after {
+  content: 'View Profile';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f7f4ea;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.alumni-tab:hover::after {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #search {
+    width: 90%;
+  }
+
+  .alumni-tab {
+    width: 90%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}

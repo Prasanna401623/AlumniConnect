@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory</title>
+    <!-- Link to the new CSS file for directory page -->
+    <link rel="stylesheet" href="css/directory.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Background Wrapper with logo in the center -->
+    <div class="background-wrapper">
+        <div class="logo-container">
+            <!-- ULM Logo -->
+            <img src="assests/ulm_logo.png" alt="ULM Logo" class="ulm-logo">
+        </div>
+
+        <h1>Alumni Directory</h1>
+
+        <!-- Search Form -->
+        <div class="form-group">
+            <input type="text" id="search" placeholder="Search for alumni">
+        </div>
+        
+
+        <!-- Alumni List -->
+        <ul id="alumni-list"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 University of Louisiana Monroe Alumni Directory</p>
+    </footer>
+
+    <script src="js/alumni-directory.js"></script>
+</body>
+</html>

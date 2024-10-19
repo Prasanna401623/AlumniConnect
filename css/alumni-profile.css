@@ -1,0 +1,106 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f4ea;
+  margin: 0;
+  padding: 0;
+}
+
+.background-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Profile Card Styling */
+.profile-tab {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-tab:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Alumni Name */
+.profile-tab h1 {
+  font-size: 28px;
+  color: #822432; /* Maroon color */
+  margin-bottom: 10px;
+}
+
+/* Section Headings */
+.profile-tab h2 {
+  font-size: 18px;
+  color: #555; /* Darker text color */
+  margin-bottom: 20px;
+}
+
+/* Contact Information Styling */
+.profile-tab p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-tab strong {
+  color: #822432;
+}
+
+/* Business Logo */
+#alumni-business-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #f7f4ea;
+  background-color: #ddd; /* Fallback for missing logos */
+  object-fit: cover;
+}
+
+/* Business Information Section */
+.business-info {
+  background: #f7f4ea;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.business-info h3 {
+  font-size: 20px;
+  color: #822432;
+  margin-bottom: 10px;
+}
+
+.business-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Discount Banner Styling */
+.discount-banner {
+  background-color: #a63d51; /* Dark maroon */
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #666;
+}

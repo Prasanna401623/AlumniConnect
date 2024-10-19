@@ -1,0 +1,135 @@
+/* Background image styles */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+/* Background wrapper styles */
+.background-wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Content area styles */
+.content {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Logo size */
+.ulm-logo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Form styling */
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px solid #822432;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #822432;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #822432;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #822432;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #a63d51;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+/* Forgot password and signup link */
+.additional-options {
+  margin-top: 15px;
+}
+
+.additional-options a {
+  color: #822432;
+  text-decoration: none;
+}
+
+.additional-options a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #822432;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background-color: #a63d51;
+  border-radius: 5px;
+}
