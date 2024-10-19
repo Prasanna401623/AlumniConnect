@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("alumni-city").textContent = alumniData.business_city + ", " + alumniData.business_state;
                 document.getElementById("alumni-category").textContent = alumniData.business_category;
                 document.getElementById("alumni-description").textContent = alumniData.business_description;
+                document.getElementById('alumni-website').textContent = alumniData.business_website;
 
                 // Set business logo (with fallback if no logo is available)
                 const logoElement = document.getElementById("alumni-business-logo");
