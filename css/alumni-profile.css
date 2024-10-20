@@ -1,9 +1,10 @@
 /* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f7f4ea;
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background-color: #f7f4ea; /* Requested background color */
   margin: 0;
   padding: 0;
+  color: #333; /* Consistent, easy-to-read text */
 }
 
 .background-wrapper {
@@ -12,95 +13,145 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 40px;
+  background-color: #f7f4ea; /* Consistent with body background */
 }
 
 /* Profile Card Styling */
 .profile-tab {
   background-color: white;
-  padding: 30px;
+  padding: 40px;
   max-width: 600px;
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 16px; /* Softer corners for a modern look */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #822432; /* Maroon border as requested */
 }
 
 .profile-tab:hover {
-  transform: scale(1.03); /* Slight zoom on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 /* Alumni Name */
 .profile-tab h1 {
-  font-size: 28px;
+  font-size: 30px;
   color: #822432; /* Maroon color */
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700; /* Bolder heading */
+  text-transform: uppercase; /* Adds a bold, modern feel */
+  letter-spacing: 1.5px; /* Spacing for a sleek look */
 }
 
 /* Section Headings */
 .profile-tab h2 {
   font-size: 18px;
-  color: #555; /* Darker text color */
+  color: #555;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 500;
 }
 
 /* Contact Information Styling */
 .profile-tab p {
   font-size: 16px;
-  color: #333;
+  color: #555;
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 .profile-tab strong {
-  color: #822432;
+  color: #822432; /* Accent maroon color */
 }
 
 /* Business Logo */
 #alumni-business-logo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 3px solid #f7f4ea;
-  background-color: #ddd; /* Fallback for missing logos */
+  border: 4px solid #f7f4ea; /* Matches background */
   object-fit: cover;
+  transition: transform 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#alumni-business-logo:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Business Information Section */
 .business-info {
-  background: #f7f4ea;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f7f4ea; /* Clean, light background */
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  border: 2px solid #822432; /* Maroon border as requested */
 }
 
-.business-info h3 {
+.business-info h2 {
+  color: #822432; /* Maroon heading for consistency */
+  font-weight: bold;
   font-size: 20px;
-  color: #822432;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .business-info p {
   font-size: 16px;
   color: #555;
+  line-height: 1.7;
 }
 
-/* Discount Banner Styling */
+/* Links (Website Links) */
+a {
+  color: #822432;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  color: #a63d51;
+  border-bottom: 2px solid #a63d51; /* Subtle underline on hover */
+}
+
+/* Discount Banner */
 .discount-banner {
   background-color: #a63d51; /* Dark maroon */
   color: white;
-  padding: 8px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 8px;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
   display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
+/* Footer */
 footer {
   text-align: center;
   margin-top: 50px;
   font-size: 14px;
   color: #666;
+}
+
+/* Animations for a modern touch */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-tab, .business-info {
+  animation: fadeInUp 0.8s ease-in-out;
 }
