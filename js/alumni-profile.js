@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("alumni-description").textContent = alumniData.business_description;
                 document.getElementById('alumni-website').textContent = alumniData.business_website;
 
+                // Set the website link
+                const websiteLink = document.getElementById("alumni-website");
+                websiteLink.href = `https://${alumniData.business_website}`;
+                websiteLink.textContent = alumniData.business_website;
+
                 // Set business logo (with fallback if no logo is available)
                 const logoElement = document.getElementById("alumni-business-logo");
                 logoElement.src = alumniData.business_logo_link || 'default-logo.png'; // Default image if no logo
