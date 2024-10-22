@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
           return; // Stop form submission if passwords don't match
       }
 
-      // Additional validation logic (if any)
-
       // If validation passes, submit the form
       alert('Account created successfully!');
       form.reset(); // Optionally reset the form

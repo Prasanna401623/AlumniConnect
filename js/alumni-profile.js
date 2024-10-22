@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const alumniId = getAlumniIdFromURL(); // Get alumni ID from the URL or selection
 
     // Fetch the alumni data from the JSON file
-    fetch('assests/data.json')  // Make sure the path to data.json is correct
+    fetch('assests/data.json') 
         .then(response => response.json())
         .then(alumniList => {
             const alumniData = getAlumniData(alumniId, alumniList); // Pass the fetched data

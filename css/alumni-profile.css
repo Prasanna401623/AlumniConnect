@@ -1,7 +1,7 @@
 /* General Styling */
 body {
   font-family: 'Poppins', sans-serif; /* Modern, clean font */
-  background-color: #f7f4ea; /* Requested background color */
+  background-color: #f7f4ea; 
   margin: 0;
   padding: 0;
   color: #333; /* Consistent, easy-to-read text */
@@ -26,7 +26,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #822432; /* Maroon border as requested */
+  border: 2px solid #822432; /* Maroon border */
 }
 
 .profile-tab:hover {
@@ -89,7 +89,7 @@ body {
   border-radius: 15px;
   margin-top: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Soft shadow */
-  border: 2px solid #822432; /* Maroon border as requested */
+  border: 2px solid #822432; /* Maroon border */
 }
 
 .business-info h2 {
