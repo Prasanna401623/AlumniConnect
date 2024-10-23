@@ -6,8 +6,8 @@ This project is a web-based Alumni Directory that allows users to search for alu
 
 **Step 1**: Open the index.html file in your browser
 
-  -Navigate to the folder where the project is saved.
-  -Double-click on index.html (or the main HTML file) to open it in your web browser.
+  - Navigate to the folder where the project is saved.
+  - Double-click on index.html (or the main HTML file) to open it in your web browser.
 
 **Step 2**: Search for Alumni
 
